@@ -170,7 +170,6 @@ namespace MsgBox
             if (CheckBox == MsgBoxCheckBox.Show)
             {
                 pnlButtons.Height += 15;
-                formHeight += 15;
                 formMinWidth = Math.Max(chkDoNotShowAgain.Width + 31, formMinWidth);
             }
 
