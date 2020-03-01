@@ -58,5 +58,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MsgBox.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MsgBoxForm.resx">
+      <DependentUpon>MsgBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

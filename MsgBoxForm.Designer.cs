@@ -54,11 +54,9 @@
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.pnlIcon = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.lblMessage = new SingleClickLabel();
             this.pnlButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.pnlIcon.SuspendLayout();
-            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlButtons
@@ -81,6 +79,7 @@
             this.chkDoNotShowAgain.TabIndex = 3;
             this.chkDoNotShowAgain.Text = "Do not display this message again.";
             this.chkDoNotShowAgain.UseVisualStyleBackColor = false;
+            this.chkDoNotShowAgain.Visible = false;
             // 
             // picIcon
             // 
@@ -104,21 +103,11 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMain.Controls.Add(this.lblMessage);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(57, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(205, 100);
             this.pnlMain.TabIndex = 7;
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.Location = new System.Drawing.Point(11, 33);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(50, 13);
-            this.lblMessage.TabIndex = 0;
-            this.lblMessage.Text = "Message";
             // 
             // MsgBoxForm
             // 
@@ -142,8 +131,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.pnlIcon.ResumeLayout(false);
             this.pnlIcon.PerformLayout();
-            this.pnlMain.ResumeLayout(false);
-            this.pnlMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
