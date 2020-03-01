@@ -3,6 +3,8 @@ This is created as close as possible to a std message box, only with the additio
 
 The usage is just as with the normal MessageBox.Show(all the normal parameters of message box + MsgBoxCheckBox / TextColor / FormBackColor / TopMost).
 
+The color is defined as hexadecimal color code (web color code)
+
 If using the Do not show again check box, one must add:
 `Syste.Windows.Forms.CheckState doNotShowAgain = System.Windows.Forms.CheckState.Indeterminate;`
 Before the MsgBox.Show() call.
