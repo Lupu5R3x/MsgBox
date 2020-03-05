@@ -134,7 +134,6 @@ namespace MsgBox
             int lblMsgTop = 23; // Default top position, when no icon.
             int lblMsgLeft = 11;
             int iconWidth = 0; // Default when no icon.
-            int formHeight = lblMessage.Height + pnlButtons.Height + pnlMain.Height; // Height of the form.
             int formMaxHeight = 500;
             int paddingButtom = 10;
             int paddingRight = 50;
@@ -172,6 +171,15 @@ namespace MsgBox
                 pnlButtons.Height += 15;
                 formMinWidth = Math.Max(chkDoNotShowAgain.Width + 31, formMinWidth);
             }
+            // Get the max width for the label.
+            int lblWidth = Math.Min(txtWidth + (paddingRight + iconWidth), txtMaxWidth);
+
+            // Set the size of the MsgBox, and the message label.
+            lblMessage.MaximumSize = new Size(lblWidth, 500 - pnlButtons.Height);
+
+            lblMessage.Top = lblMsgTop;
+            lblMessage.Left = lblMsgLeft;
+            int formHeight = lblMessage.Height + pnlMain.Height + lblMsgTop; // Height of the form.
 
             // Check if we need to add scrollbar to the main panel.
             if (formHeight > formMaxHeight)
@@ -183,15 +191,9 @@ namespace MsgBox
                 pnlMain.AutoScrollMargin = new Size(0, 10);
             }
 
-            // Get the max width for the label.
-            int lblWidth = Math.Min(txtWidth + (paddingRight + iconWidth), txtMaxWidth);
-
-            // Set the size of the MsgBox, and the message label.
-            lblMessage.MaximumSize = new Size(lblWidth, lblMessage.Height);
-            lblMessage.Top = lblMsgTop;
-            lblMessage.Left = lblMsgLeft;
+            // Set form size.
             Width = Math.Min(Math.Max(Math.Max(txtWidth + (paddingRight + iconWidth), formMinWidth), captionWidth + 55), 426);
-            Height = Math.Min(formHeight, formMaxHeight) - paddingButtom;
+            Height = Math.Min(formHeight, formMaxHeight) + paddingButtom;
 
         }
 
