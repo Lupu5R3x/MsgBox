@@ -1,6 +1,6 @@
 ﻿
 
-namespace MsgBox
+namespace MsgBoxEx
 {
     /// <summary>
     /// Contains all possible values for the InformationBox icon.

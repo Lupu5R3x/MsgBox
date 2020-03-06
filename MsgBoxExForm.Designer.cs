@@ -1,4 +1,4 @@
-﻿namespace MsgBox
+﻿namespace MsgBoxEx
 {
     partial class MsgBoxForm
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace MsgBox
+namespace MsgBoxEx
 {
     using System;
     using System.Drawing;

@@ -1,4 +1,4 @@
-﻿namespace MsgBox
+﻿namespace MsgBoxEx
 {
     using System.Windows.Forms;
     public static class MsgBox
