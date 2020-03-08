@@ -6,7 +6,7 @@ namespace MsgBoxEx
     using System.Runtime.InteropServices;
     using System.Windows.Forms;
 
-    public partial class MsgBoxForm : Form
+    public partial class MsgBoxExForm : Form
     {
 
         // Private get set's
@@ -20,7 +20,7 @@ namespace MsgBoxEx
         private string FormColor { get; set; } = null;
 
 
-        internal MsgBoxForm(string message)
+        internal MsgBoxExForm(string message)
         {
             // Custom MsgBox form start.          
             InitializeComponent();
@@ -34,44 +34,44 @@ namespace MsgBoxEx
             Font = SystemFonts.CaptionFont;
         }
 
-        internal MsgBoxForm(string message, string caption) : this(message)
+        internal MsgBoxExForm(string message, string caption) : this(message)
         {
             // Set the caption of the message box.
             Text = caption;
         }
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons) : this(message, caption)
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons) : this(message, caption)
         {
             // Set buttons;
             Buttons = msgBoxButtons;
         }
 
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon) : this(message, caption, msgBoxButtons)
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon) : this(message, caption, msgBoxButtons)
         {
             // Set the icon style.
             IconStyle = icon;
         }
 
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton) :
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton) :
             this(message, caption, msgBoxButtons, icon)
         {
             // Set default button
             DefaultButton = defaultButton;
         }
 
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon,
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon,
             MsgBoxDefaultButton defaultButton, MsgBoxCheckBox checkBox) : this(message, caption, msgBoxButtons, icon, defaultButton)
         {
             // Set the check box
             CheckBox = checkBox;
         }
 
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox checkBox, string textColor) : this(message, caption, msgBoxButtons, icon, defaultButton, checkBox)
         {
             // Set the color of the Message text.
             TextColor = textColor;
         }
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox checkBox, string textColor, string formBackGroundColor) :
             this(message, caption, msgBoxButtons, icon, defaultButton, checkBox, textColor)
         {
@@ -79,7 +79,7 @@ namespace MsgBoxEx
             FormColor = formBackGroundColor;
         }
 
-        internal MsgBoxForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
+        internal MsgBoxExForm(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox checkBox, string textColor, string formBackGroundColor, MsgBoxOrder topmost) :
             this(message, caption, msgBoxButtons, icon, defaultButton, checkBox, textColor, formBackGroundColor)
         {

@@ -1,6 +1,6 @@
 ﻿namespace MsgBoxEx
 {
-    partial class MsgBoxForm
+    partial class MsgBoxExForm
     {
         /// <summary>
         /// Required designer variable.
@@ -54,6 +54,7 @@
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.pnlIcon = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblMessage = new MsgBoxExForm.SingleClickLabel();
             this.pnlButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.pnlIcon.SuspendLayout();
@@ -103,11 +104,21 @@
             // pnlMain
             // 
             this.pnlMain.BackColor = System.Drawing.Color.Transparent;
+            this.pnlMain.Controls.Add(this.lblMessage);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(57, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(205, 100);
             this.pnlMain.TabIndex = 7;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = false;
+            this.lblMessage.Location = new System.Drawing.Point(11, 33);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(50, 13);
+            this.lblMessage.TabIndex = 0;
+            this.lblMessage.Text = "Message";
             // 
             // MsgBoxForm
             // 
@@ -142,6 +153,6 @@
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.Panel pnlIcon;
         private System.Windows.Forms.Panel pnlMain;
-        private SingleClickLabel lblMessage;
+        private MsgBoxExForm.SingleClickLabel lblMessage;
     }
 }

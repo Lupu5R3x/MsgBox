@@ -13,7 +13,7 @@
         /// MsgBoxResult OK</returns>
         public static MsgBoxResult Show(string msg)
         {
-            return new MsgBoxForm(msg).Show();
+            return new MsgBoxExForm(msg).Show();
         }
         /// <summary>
         /// Displays a message box with specified text and caption.
@@ -29,7 +29,7 @@
         /// </returns>
         public static MsgBoxResult Show(string message, string caption)
         {
-            return new MsgBoxForm(message, caption).Show();
+            return new MsgBoxExForm(message, caption).Show();
         }
 
         /// <summary>
@@ -50,7 +50,7 @@
         /// </returns>
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons).Show();
+            return new MsgBoxExForm(message, caption, msgBoxButtons).Show();
         }
         /// <summary>
         /// Displays a message box with specified text, caption, buttons and Icon.
@@ -74,7 +74,7 @@
         /// </returns>
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons, icon).Show();
+            return new MsgBoxExForm(message, caption, msgBoxButtons, icon).Show();
         }
         /// <summary>
         /// Displays a message box with specified text, caption, buttons, Icon and default button.
@@ -101,7 +101,7 @@
         /// </returns>
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons, icon, defaultButton).Show();
+            return new MsgBoxExForm(message, caption, msgBoxButtons, icon, defaultButton).Show();
         }
 
         /// <summary>
@@ -139,7 +139,7 @@
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox doNotShowAgain, out CheckState checkBoxState)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain).Show(out checkBoxState);
+            return new MsgBoxExForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain).Show(out checkBoxState);
         }
 
         /// <summary>
@@ -181,7 +181,7 @@
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox doNotShowAgain, out CheckState checkBoxState, string textColor)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain, textColor).Show(out checkBoxState);
+            return new MsgBoxExForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain, textColor).Show(out checkBoxState);
         }
 
         /// <summary>
@@ -227,7 +227,7 @@
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox doNotShowAgain, out CheckState checkBoxState, string textColor, string formColor)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain, textColor, formColor).Show(out checkBoxState);
+            return new MsgBoxExForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain, textColor, formColor).Show(out checkBoxState);
         }
 
         /// <summary>
@@ -277,7 +277,7 @@
         public static MsgBoxResult Show(string message, string caption, MsgBoxButtons msgBoxButtons, MsgBoxIcon icon, MsgBoxDefaultButton defaultButton,
             MsgBoxCheckBox doNotShowAgain, out CheckState checkBoxState, string textColor, string formColor, MsgBoxOrder topMost)
         {
-            return new MsgBoxForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain, textColor, formColor, topMost).Show(out checkBoxState);
+            return new MsgBoxExForm(message, caption, msgBoxButtons, icon, defaultButton, doNotShowAgain, textColor, formColor, topMost).Show(out checkBoxState);
         }
     }
 }
