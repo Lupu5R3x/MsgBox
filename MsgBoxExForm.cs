@@ -135,15 +135,15 @@ namespace MsgBoxEx
             int lblMsgLeft = 11;
             int iconWidth = 0; // Default when no icon.
             int formMaxHeight = 500;
-            int paddingButtom = 10;
-            int paddingRight = 50;
+            int paddingButtom = 0;
+            int paddingRight = 55;
 
             // Check if we have an icon.
             if (IconStyle != MsgBoxIcon.None)
             {
                 txtMaxWidth = 323;
-                lblMsgTop = 33;
-                lblMsgLeft = 5;
+                lblMsgTop = 23;
+                lblMsgLeft = 0;
                 iconWidth = pnlIcon.Width;
                 paddingButtom = 0;
             }

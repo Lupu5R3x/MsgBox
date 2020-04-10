@@ -54,10 +54,11 @@
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.pnlIcon = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.lblMessage = new MsgBoxExForm.SingleClickLabel();
+            this.lblMessage = new MsgBoxEx.MsgBoxExForm.SingleClickLabel();
             this.pnlButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.pnlIcon.SuspendLayout();
+            this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlButtons
@@ -84,7 +85,7 @@
             // 
             // picIcon
             // 
-            this.picIcon.Location = new System.Drawing.Point(21, 23);
+            this.picIcon.Location = new System.Drawing.Point(17, 23);
             this.picIcon.Name = "picIcon";
             this.picIcon.Size = new System.Drawing.Size(32, 32);
             this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -98,7 +99,7 @@
             this.pnlIcon.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlIcon.Location = new System.Drawing.Point(0, 0);
             this.pnlIcon.Name = "pnlIcon";
-            this.pnlIcon.Size = new System.Drawing.Size(57, 100);
+            this.pnlIcon.Size = new System.Drawing.Size(51, 100);
             this.pnlIcon.TabIndex = 6;
             // 
             // pnlMain
@@ -106,21 +107,21 @@
             this.pnlMain.BackColor = System.Drawing.Color.Transparent;
             this.pnlMain.Controls.Add(this.lblMessage);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(57, 0);
+            this.pnlMain.Location = new System.Drawing.Point(51, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(205, 100);
+            this.pnlMain.Size = new System.Drawing.Size(211, 100);
             this.pnlMain.TabIndex = 7;
             // 
             // lblMessage
             // 
-            this.lblMessage.AutoSize = false;
-            this.lblMessage.Location = new System.Drawing.Point(11, 33);
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Location = new System.Drawing.Point(5, 28);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(50, 13);
             this.lblMessage.TabIndex = 0;
             this.lblMessage.Text = "Message";
             // 
-            // MsgBoxForm
+            // MsgBoxExForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -133,7 +134,7 @@
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(497, 800);
             this.MinimizeBox = false;
-            this.Name = "MsgBoxForm";
+            this.Name = "MsgBoxExForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MsgBoxForm_FormClosed);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MsgBoxForm_KeyDown);
@@ -142,6 +143,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.pnlIcon.ResumeLayout(false);
             this.pnlIcon.PerformLayout();
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
             this.ResumeLayout(false);
 
         }
